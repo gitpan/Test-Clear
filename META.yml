@@ -29,7 +29,7 @@ no_index:
 provides:
   Test::Clear:
     file: lib/Test/Clear.pm
-    version: 0.02
+    version: 0.03
 requires:
   Exporter: 0
   Scope::Guard: 0
@@ -39,4 +39,6 @@ resources:
   bugtracker: https://github.com/hixi-hyi/p5-Test-Clear/issues
   homepage: https://github.com/hixi-hyi/p5-Test-Clear
   repository: git://github.com/hixi-hyi/p5-Test-Clear.git
-version: 0.02
+version: 0.03
+x_contributors:
+  - 'Hiroyoshi HOUCHI <account@hixi-hyi.com>'

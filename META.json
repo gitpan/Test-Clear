@@ -60,7 +60,7 @@
    "provides" : {
       "Test::Clear" : {
          "file" : "lib/Test/Clear.pm",
-         "version" : "0.02"
+         "version" : "0.03"
       }
    },
    "release_status" : "stable",
@@ -74,5 +74,8 @@
          "web" : "https://github.com/hixi-hyi/p5-Test-Clear"
       }
    },
-   "version" : "0.02"
+   "version" : "0.03",
+   "x_contributors" : [
+      "Hiroyoshi HOUCHI <account@hixi-hyi.com>"
+   ]
 }

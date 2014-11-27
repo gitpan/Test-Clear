@@ -8,7 +8,7 @@ use Test::Builder;
 use Data::Dumper;
 use Scope::Guard;
 
-our $VERSION = "0.02";
+our $VERSION = "0.03";
 our @EXPORT = qw(case todo_scope todo_note);
 
 sub dumper {
@@ -56,9 +56,13 @@ sub todo_scope {
 sub todo_note {
     my ($caption, $reason) = @_;
     $reason ||= '';
+
+    my (undef, $file, $line) = caller(0);
+    $reason .= " [ $file line $line ]\n";
+
     my $tb = Test::More->builder;
     $tb->todo_start($reason);
-    fail $caption;
+    pass $caption;
     $tb->todo_end;
 }
 
